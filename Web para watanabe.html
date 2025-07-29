@@ -1,0 +1,295 @@
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastonmia Watanabe - Sushi de autor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Serif JP', serif;
+            background-color: #000;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+        
+        .menu-item {
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .red-accent {
+            color: #E53935;
+        }
+        
+        .red-border {
+            border-bottom: 2px solid #E53935;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="bg-black text-white fixed w-full z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="red-accent">GASTONMIA</span> WATANABE
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="hover:text-red-500">Inicio</a>
+                <a href="#menu" class="hover:text-red-500">Menú</a>
+                <a href="#galeria" class="hover:text-red-500">Galería</a>
+                <a href="#contacto" class="hover:text-red-500">Contacto</a>
+            </nav>
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bbc265d3-3970-479c-9210-1bc07ca1899d.png" alt="Presentación artística de sushi en un restaurante de lujo con iluminación dramática, mostrando piezas de nigiri y maki sobre una barra de madera oscura con acentos rojos" class="absolute inset-0 w-full h-full object-cover">
+        
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">SUSHI <span class="red-accent">DE AUTOR</span></h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Una experiencia gastronómica que fusiona tradición y vanguardia</p>
+            <a href="#reservas" class="bg-transparent border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-black px-8 py-3 text-lg font-medium transition duration-300">RESERVAR</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d19c0a8a-e537-4742-ade8-45b4fa31ec91.png" alt="Chef japonés preparando sushi con precisión en una cocina moderna de estilo minimalista con iluminación cálida" class="rounded-lg shadow-2xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 red-border pb-2 inline-block">SOBRE <span class="red-accent">NOSOTROS</span></h2>
+                    <p class="text-gray-300 mb-6 text-lg">
+                        Gastonmia Watanabe representa la culminación de tres generaciones de maestros sushi. Fundado en 2023, nuestro restaurante ofrece una reinterpretación contemporánea de la cocina japonesa tradicional.
+                    </p>
+                    <p class="text-gray-300 mb-6 text-lg">
+                        Cada pieza es una obra de arte, elaborada con ingredientes de la más alta calidad y técnicas perfeccionadas durante décadas.
+                    </p>
+                    <div class="flex items-center mt-8">
+                        <div class="w-16 h-1 bg-red-500 mr-4"></div>
+                        <p class="text-lg italic">"La perfección está en los detalles"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">NUESTRO <span class="red-accent">MENÚ</span> DESTACADO</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Item 1 -->
+                <div class="bg-black p-6 rounded-lg menu-item shadow-lg hover:shadow-red-500/20">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fdf2f8d9-a217-4d4d-a731-61992a126109.png" alt="Plato de sushi variado con piezas de dragon roll, nigiri de salmón y atún, decorado con rábanos tallados y wasabi" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-2xl font-bold mb-2">EXPERIENCIA <span class="red-accent">WATANABE</span></h3>
+                    <p class="text-gray-300 mb-4">Selección del chef de 15 piezas que incluye nuestras especialidades de temporada.</p>
+                    <p class="text-red-500 font-bold">$45.00</p>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="bg-black p-6 rounded-lg menu-item shadow-lg hover:shadow-red-500/20">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0ac16b4c-b190-4736-a82d-4cb154292d90.png" alt="Primer plano de un dragon roll artístico con anguila, aguacate y salsa especial sobre un plato negro" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-2xl font-bold mb-2">DRAGON <span class="red-accent">ROLL</span> BLACK</h3>
+                    <p class="text-gray-300 mb-4">Nuestra versión premium con anguila, aguacate y salsa especial negra.</p>
+                    <p class="text-red-500 font-bold">$28.00</p>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="bg-black p-6 rounded-lg menu-item shadow-lg hover:shadow-red-500/20">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/52560c03-9a01-49ad-b7d1-c9bcb21ce8bc.png" alt="Nigiri de atún de alta calidad sobre tabla de madera con hojas de shiso y wasabi fresco" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-2xl font-bold mb-2">TSUKI <span class="red-accent">OMAKASE</span></h3>
+                    <p class="text-gray-300 mb-4">Experiencia íntima frente al chef con degustación de 12 piezas de edición limitada.</p>
+                    <p class="text-red-500 font-bold">$75.00</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-8 py-3 text-lg font-medium transition duration-300">VER MENÚ COMPLETO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">GALERÍA <span class="red-accent">VISUAL</span></h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/77eee29d-e0cf-452a-a33a-1f863cc524e9.png" alt="Interior del restaurante con barra de sushi iluminada con luces cálidas y sillas altas con cojines rojos" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/09559f0e-c3de-4dd2-b8e7-126ac59ac33a.png" alt="Detalle de una mesa con cubertería japonesa sobre mantel negro y decoración floral minimalista" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a07b31fd-a2d2-43c9-86de-3912b5b64c7e.png" alt="Plato de sashimi dispuesto artísticamente con flores comestibles sobre placa de piedra negra" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cb145ab8-72b6-4e76-8b80-cb7a647972e6.png" alt="Chef presentando un bocado de sushi directamente al comensal en una experiencia íntima" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-2">CONTACTO Y <span class="red-accent">RESERVAS</span></h2>
+                <p class="text-center text-gray-300 mb-12 max-w-2xl mx-auto">Reserve su mesa para una experiencia gastronómica inolvidable.</p>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 red-border pb-2 inline-block">INFORMACIÓN</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <p class="flex items-start">
+                                <svg class="w-5 h-5 mr-3 text-red-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Calle Sushi 123, Distrito Gourmet, Lima
+                            </p>
+                            <p class="flex items-start">
+                                <svg class="w-5 h-5 mr-3 text-red-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                +51 987 654 321
+                            </p>
+                            <p class="flex items-start">
+                                <svg class="w-5 h-5 mr-3 text-red-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                reservas@gastonmiawatanabe.com
+                            </p>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold mt-10 mb-4 red-border pb-2 inline-block">HORARIO</h3>
+                        <div class="space-y-2 text-gray-300">
+                            <p>Lunes - Jueves: 12:00 - 15:00 | 19:00 - 23:00</p>
+                            <p>Viernes - Sábado: 12:00 - 16:00 | 19:00 - 00:00</p>
+                            <p>Domingo: 12:00 - 17:00</p>
+                        </div>
+                    </div>
+                    
+                    <div id="reservas">
+                        <h3 class="text-xl font-bold mb-4 red-border pb-2 inline-block">RESERVA TU MESA</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Nombre completo" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-red-500 text-white">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Correo electrónico" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-red-500 text-white">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <input type="date" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-red-500 text-white">
+                                </div>
+                                <div>
+                                    <select class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-red-500 text-white">
+                                        <option value="">Hora</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <!-- More options -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <textarea placeholder="Notas adicionales" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-red-500 text-white h-24"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded transition duration-300">RESERVAR AHORA</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold">
+                        <span class="red-accent">GASTONMIA</span> WATANABE
+                    </div>
+                    <p class="text-gray-400 mt-2">Sushi de autor desde 2023</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-red-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 5.16c-.88.39-1.82.65-2.82.77 1.01-.61 1.79-1.57 2.16-2.72-.95.56-2 .97-3.12 1.19-.89-.95-2.16-1.55-3.57-1.55-2.7 0-4.89 2.19-4.89 4.89 0 .38.04.76.12 1.12-4.06-.2-7.66-2.15-10.07-5.11-.42.72-.66 1.56-.66 2.46 0 1.7.86 3.2 2.17 4.07-.8-.02-1.55-.24-2.21-.61v.06c0 2.37 1.68 4.34 3.91 4.79-.41.11-.85.17-1.3.17-.32 0-.63-.03-.93-.09.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.81 2.11-6.12 2.11-.4 0-.79-.02-1.17-.07 2.17 1.39 4.75 2.2 7.52 2.2 9.03 0 13.96-7.48 13.96-13.96 0-.21 0-.42-.02-.63.96-.69 1.79-1.55 2.45-2.53z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-red-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.16c-2.76 0-5 2.24-5 5 0 5 5 11 5 11s5-6 5-11c0-2.76-2.24-5-5-5zm0 7.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-red-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 Gastonmia Watanabe. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.querySelector('button').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('right-6');
+            nav.classList.toggle('bg-black');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('rounded');
+            nav.classList.toggle('shadow-lg');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+```
